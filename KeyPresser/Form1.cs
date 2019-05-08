@@ -11,7 +11,7 @@ namespace KeyPresser
         private static extern void keybd_event(byte bVk, byte bScan, int dwFlags, int dwExtraInfo);
         // Hides it from the ALT-TAB menu
         [DllImport("user32.dll")]
-        public static extern int SetWindowLong(IntPtr window, int index, int value);
+        public static extern int SetWindowLong(IntPtr window, int index, int value); 
         [DllImport("user32.dll")]
         public static extern int GetWindowLong(IntPtr window, int index);
 
